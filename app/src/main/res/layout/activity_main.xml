@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    tools:context=".MainActivity"
+    android:padding="0dp"
+    android:weightSum="1"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:background="@drawable/mainbg">
+
+
+    <Button
+        android:id="@+id/btn_cari"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="@string/cari_istilah"
+        android:textAlignment="center"
+        android:background="@color/switch_thumb_normal_material_dark"
+        android:layout_gravity="right"
+        android:gravity="center|center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:clickable="true" />
+
+    <Button
+        android:id="@+id/btn_panduan"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="@string/btn_panduan"
+        android:textAlignment="center"
+        android:background="@color/switch_thumb_normal_material_dark"
+        android:gravity="center|center_horizontal"
+        android:onClick="btn_panduan"
+        android:layout_below="@+id/btn_cari"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:clickable="true" />
+
+    <Button
+        android:id="@+id/btn_tentang"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="@string/btn_tentang"
+        android:textAlignment="center"
+        android:background="@color/switch_thumb_normal_material_dark"
+        android:padding="0dp"
+        android:gravity="center|center_horizontal"
+        android:onClick="btn_tentang"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/btn_panduan"
+        android:layout_centerHorizontal="true"
+        android:clickable="true" />
+
+</RelativeLayout>
